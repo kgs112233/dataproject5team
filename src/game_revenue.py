@@ -9,7 +9,7 @@ game_ids = []
 with open("test_input.csv", "r", encoding="utf-8-sig") as f:
     reader = csv.DictReader(f)
     for row in reader:
-        game_ids.append(row["App_ID"])
+        game_ids.append(row["appid"])
 
 chrome_options = Options()
 chrome_options.add_argument("--headless=new")
@@ -64,10 +64,10 @@ for game_id in game_ids:
 
 driver.quit()
 
-with open("revenue_total.csv", "w", newline="", encoding="utf-8-sig") as f:
+with open("game_revenue_output.csv", "w", newline="", encoding="utf-8-sig") as f:
     writer = csv.writer(f)
     writer.writerow([
-        "App_ID",
+        "appid",
         "Gross_Revenue_Normal",
         "Gross_Revenue_Base_Game",
         "Gross_Revenue_Final"
