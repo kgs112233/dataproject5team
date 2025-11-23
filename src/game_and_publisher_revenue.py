@@ -67,7 +67,7 @@ def process_game(game):
             result["game_revenue"] = gross_base
 
     except Exception:
-        pass  # ERROR 상태 그대로 둠
+        pass
 
     finally:
         driver.quit()
@@ -114,10 +114,10 @@ def process_publisher(pub):
 # 메인 실행부
 if __name__ == "__main__":
 
-    # 병렬 프로세스 수 설정
+    # 병렬 프로세스 수
     POOL_SIZE = min(8, cpu_count())
 
-    # 입력 데이터 읽기
+    # 데이터 입력
     games = []
     publishers = []
 
@@ -131,7 +131,7 @@ if __name__ == "__main__":
             })
             publishers.append(row["publishers"])
 
-    # 퍼블리셔 중복 제거
+    # 배급사 중복 제거
     unique_publishers = list(set(publishers))
 
     print(f"[INFO] 총 게임 수: {len(games)}개")
