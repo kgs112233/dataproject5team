@@ -1,5 +1,4 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+#made 김근석
 
 """
 스팀 전체 게임을 수집해서 CSV로 저장하는 스크립트.
