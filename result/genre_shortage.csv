@@ -1,0 +1,25 @@
+﻿Genre,with_F2P,without_F2P
+4X,3,5
+Action,5,9
+Adventure,1,9
+Card & Board,2,5
+Casual,3,10
+City Builder,1,4
+Fighting,3,5
+Horror,1,2
+Indie,2,6
+JRPG,2,2
+Massively Multiplayer,5,20
+Metroidvania,2,3
+Platformer,2,5
+Puzzle,1,7
+RPG,4,6
+Racing,4,7
+Roguelike,0,1
+Shooter,6,11
+Simulation,0,5
+Sports,15,19
+Strategy,4,6
+Survival,1,5
+Tower Defense,0,3
+Visual Novel,1,4
