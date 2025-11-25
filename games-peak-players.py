@@ -5,9 +5,9 @@ import random
 from bs4 import BeautifulSoup
 from concurrent.futures import ThreadPoolExecutor
 
-INPUT_CSV  = "전체_게임_목록.csv"
-OUTPUT_CSV = "steam_역대_최고동접_완료본.csv"
-LOG_FILE   = "진행상황_실시간.txt"
+INPUT_CSV  = "test_input.csv"
+OUTPUT_CSV = "steam_peak_players_output.csv"
+LOG_FILE   = "time_log.txt"
 
 session = requests.Session()
 session.headers.update({'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'})
