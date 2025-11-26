@@ -51,8 +51,8 @@ def sample_games_by_genre(file_path):
         # 해당 장르의 후보군에서 중복된 게임ID 제거
         candidates = candidates.drop_duplicates(subset=['appid'])
         
-        # 랜덤으로 100개 (혹은 그 이하) 추출
-        sample_count = min(len(candidates), 100)
+        # 랜덤으로 150개 (혹은 그 이하) 추출
+        sample_count = min(len(candidates), 150)
         
         if sample_count > 0:
             # 랜덤 샘플링
