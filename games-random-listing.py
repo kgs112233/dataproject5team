@@ -56,7 +56,7 @@ def sample_games_by_genre(file_path):
         
         if sample_count > 0:
             # 랜덤 샘플링
-            selected = candidates.sample(n=sample_count) # random_state를 지정하지 않을 시 랜덤
+            selected = candidates.sample(n=sample_count, random_state=42) # random_state를 지정하지 않을 시 랜덤
             
             # 결과 저장 및 수집된 ID 등록
             for _, item in selected.iterrows():
@@ -89,12 +89,12 @@ def sample_games_by_genre(file_path):
         # 정렬 (장르별 -> 동접자순)
         result_df = result_df.sort_values(by=['Selected_Genre', 'peak_players'], ascending=[True, False])
     
-    output_filename = '장르별_랜덤_게임목록.csv'
+    output_filename = 'RandomListByGenres.csv'
     result_df.to_csv(output_filename, index=False, encoding='utf-8-sig')
     print(f"\n총 {len(result_df)}개의 게임이 선택되었습니다.")
     print(f"결과 파일 저장 완료: {output_filename}")
     
     return result_df
 
-file_path = '게임목록+최고동시접속자.csv'
+file_path = 'only_games_peak100.csv'
 df_result = sample_games_by_genre(file_path)
