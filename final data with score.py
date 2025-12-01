@@ -77,7 +77,7 @@ final_cols = original_cols + ['total_score']
 
 df_final = df[final_cols]
 
-output_filename = 'steam_games_with_score_original_order.csv'
+output_filename = 'steam_games_with_score.csv'
 df_final.to_csv(output_filename, index=False)
 
 print(f"점수가 포함된 파일 저장: {output_filename}")
