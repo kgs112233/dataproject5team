@@ -4,19 +4,27 @@ import re
 
 # 키워드 카테고리 정의 (최고 수치 계산에 필요한 Ratio 컬럼을 식별하기 위해 필요)
 GENRE_FACTORS = {
-    "Action": ["Combat", "Controls", "Difficulty"],
-    "Strategy": ["StrategicVariety", "AIQuality", "InfoClarity"],
-    "Indie": ["Originality", "Polish/Bugs", "Value"],
-    "RPG": ["Worldbuilding", "Rewards", "Freedom/Choice"],
-    "Simulation": ["SystemDepth", "UI/Interface", "Realism"],
-    "Adventure": ["Story", "Exploration", "Atmosphere"],
-    "Casual": ["Addictiveness", "Variety/LevelDesign", "Playtime/Pacing"],
-    "Puzzle": ["Logic/Intuition", "DifficultyCurve", "Novelty"]
+    "Action": ["Combat", "Controls", "Difficulty",
+               "TechIssues", "Balance", "Blame"],
+    "Strategy": ["StrategicVariety", "AIQuality", "InfoClarity",
+                 "TechIssues", "Balance", "Blame"],
+    "Indie": ["Originality", "Polish/Bugs", "Value",
+              "TechIssues", "Balance", "Blame"],
+    "RPG": ["Worldbuilding", "Rewards", "Freedom/Choice",
+            "TechIssues", "Balance", "Blame"],
+    "Simulation": ["SystemDepth", "UI/Interface", "Realism",
+                   "TechIssues", "Balance", "Blame"],
+    "Adventure": ["Story", "Exploration", "Atmosphere",
+                  "TechIssues", "Balance", "Blame"],
+    "Casual": ["Addictiveness", "Variety/LevelDesign", "Playtime/Pacing",
+               "TechIssues", "Balance", "Blame"],
+    "Puzzle": ["Logic/Intuition", "DifficultyCurve", "Novelty",
+               "TechIssues", "Balance", "Blame"]
 }
 
 def calculate_genre_maximums():
     # 파일 경로 설정 (이전 스크립트와 동일)
-    base_dir = "C:\\Users\\minjh\\OneDrive\\문서\\데분프 과제\\팀플\\dataproject5team\\collect_steam_review"
+    base_dir = "C:\\Users\\minjh\\Downloads\\dataproject5team-feature-kimguenseok-redit\\dataproject5team-feature-kimguenseok-redit\\review_analyze_code_and_result\\"
     
     ANALYSIS_RESULTS_PATH = os.path.join(base_dir, "final_analysis_results_3_categories.csv")
     TOP_GAMES_PATH = os.path.join(base_dir, "final_top_20_per_genre_fixed.csv")
