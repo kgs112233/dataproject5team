@@ -826,6 +826,7 @@ NEW_GENRE_FACTORS = {
                 r'monotonous course(s)?',
             ],
         },
+        
         'Graphics & Immersion': {
             'SUCCESS': [
                 r'great graphic(s)?',
@@ -1152,6 +1153,88 @@ NEW_GENRE_FACTORS = {
                 r'poor server stability',
             ],
         },
+        "TechIssues": {
+            "SUCCESS": [
+                r'no bugs',
+                r'no lag',
+                r'stable performance',
+                r'well optimized',
+                r'no crashes'
+            ],
+            "FAILURE": [
+                r'\bbug(s)?\b',
+                r'\bglitch(es)?\b',
+                r'\bcrash(ed|es|ing)?\b',
+                r'\blag(gy)?\b',
+                r'\b(stutter|stuttering)\b',
+                r'\bfps drop(s)?\b',
+                r'\bframe drop(s)?\b',
+                r'performance issue(s)?',
+                r'poor(ly)? optimized',
+                r'\boptimization\b',
+                r'server issue(s)?',
+                r'\bdisconnect(ed|s|ing)?\b',
+                r'\bdesync\b',
+                r'cheat(s|er|ers|ing)?',
+                r'hack(er|ers|ing|s)?',
+                r'exploit(s|ed|ing)?',
+                r'\berror(s)?\b'
+            ]
+        },
+        "Balance": {
+            "SUCCESS": [
+                r'well balanced',
+                r'good balance',
+                r'balanced gameplay',
+                r'fair balance',
+                r'balanced (classes|weapons|heroes)'
+            ],
+            "FAILURE": [
+                r'bad balance',
+                r'unbalanced',
+                r'imbalanced',
+                r'broken (class|weapon|build|character)',
+                r'overpowered',
+                r'\bOP\b',
+                r'underpowered',
+                r'needs nerf',
+                r'needs buff',
+                r'pay to win',
+                r'\bp2w\b'
+            ]
+        },
+        "Blame": {
+            "SUCCESS": [
+
+                r'devs listened',
+                r'devs care',
+                r'developers fixed it',
+                r'great support from devs'
+            ],
+            "FAILURE": [
+
+                r'lazy devs?',
+                r'greedy devs?',
+                r'devs? don\'t care',
+                r'developers? don\'t care',
+                r'terrible devs?',
+                r'devs? ignored',
+                r'devs? abandoned',
+                r'cash grab',
+                r'money grab',
+                r'shameless cash grab',
+                r'scam',
+
+                r'predatory monetization',
+                r'predatory microtransactions',
+                r'paywall',
+
+                r'toxic community',
+                r'toxic players',
+                r'worst community',
+                r'shameful community'
+            ]
+        }
     },
 
     'Tower Defense': {
@@ -1906,7 +1989,9 @@ NEW_GENRE_FACTORS = {
             ]
         }
     },
-        "Platformer": {
+    
+    
+    "Platformer": {
         "Control": {
             "SUCCESS": [
                 r"precise(ly)? controls?", r"tight controls?", r"responsiv(e|ness)", r"smooth(ly)? (movement|gameplay)", 
@@ -1940,6 +2025,88 @@ NEW_GENRE_FACTORS = {
                 r"unfair(ly)?", r"impossible difficulty", r"rage inducing", r"annoying(ly)? hard", r"difficulty spike",
                 r"unbalan(ced|ce)", r"artificial difficulty", r"cheap shots?", r"trial and error", r"punishing(ly)?",
                 r"frustrating(ly)? hard", r"rng based difficulty"
+            ]
+        },
+                "TechIssues": {
+            "SUCCESS": [
+                r'no bugs',
+                r'no lag',
+                r'stable performance',
+                r'well optimized',
+                r'no crashes'
+            ],
+            "FAILURE": [
+                r'\bbug(s)?\b',
+                r'\bglitch(es)?\b',
+                r'\bcrash(ed|es|ing)?\b',
+                r'\blag(gy)?\b',
+                r'\b(stutter|stuttering)\b',
+                r'\bfps drop(s)?\b',
+                r'\bframe drop(s)?\b',
+                r'performance issue(s)?',
+                r'poor(ly)? optimized',
+                r'\boptimization\b',
+                r'server issue(s)?',
+                r'\bdisconnect(ed|s|ing)?\b',
+                r'\bdesync\b',
+                r'cheat(s|er|ers|ing)?',
+                r'hack(er|ers|ing|s)?',
+                r'exploit(s|ed|ing)?',
+                r'\berror(s)?\b'
+            ]
+        },
+        "Balance": {
+            "SUCCESS": [
+                r'well balanced',
+                r'good balance',
+                r'balanced gameplay',
+                r'fair balance',
+                r'balanced (classes|weapons|heroes)'
+            ],
+            "FAILURE": [
+                r'bad balance',
+                r'unbalanced',
+                r'imbalanced',
+                r'broken (class|weapon|build|character)',
+                r'overpowered',
+                r'\bOP\b',
+                r'underpowered',
+                r'needs nerf',
+                r'needs buff',
+                r'pay to win',
+                r'\bp2w\b'
+            ]
+        },
+        "Blame": {
+            "SUCCESS": [
+
+                r'devs listened',
+                r'devs care',
+                r'developers fixed it',
+                r'great support from devs'
+            ],
+            "FAILURE": [
+
+                r'lazy devs?',
+                r'greedy devs?',
+                r'devs? don\'t care',
+                r'developers? don\'t care',
+                r'terrible devs?',
+                r'devs? ignored',
+                r'devs? abandoned',
+                r'cash grab',
+                r'money grab',
+                r'shameless cash grab',
+                r'scam',
+
+                r'predatory monetization',
+                r'predatory microtransactions',
+                r'paywall',
+
+                r'toxic community',
+                r'toxic players',
+                r'worst community',
+                r'shameful community'
             ]
         }
     },
@@ -1976,7 +2143,90 @@ NEW_GENRE_FACTORS = {
                 r"glitch(y|es)?", r"bug(s|gy)?", r"bad sound", r"poor(ly)? audio", r"bad graphics?", r"ugly textures?",
                 r"looks? bad", r"clipping", r"low res", r"bad optimization", r"janky animations?", r"looks outdated"
             ]
+        },
+                "TechIssues": {
+            "SUCCESS": [
+                r'no bugs',
+                r'no lag',
+                r'stable performance',
+                r'well optimized',
+                r'no crashes'
+            ],
+            "FAILURE": [
+                r'\bbug(s)?\b',
+                r'\bglitch(es)?\b',
+                r'\bcrash(ed|es|ing)?\b',
+                r'\blag(gy)?\b',
+                r'\b(stutter|stuttering)\b',
+                r'\bfps drop(s)?\b',
+                r'\bframe drop(s)?\b',
+                r'performance issue(s)?',
+                r'poor(ly)? optimized',
+                r'\boptimization\b',
+                r'server issue(s)?',
+                r'\bdisconnect(ed|s|ing)?\b',
+                r'\bdesync\b',
+                r'cheat(s|er|ers|ing)?',
+                r'hack(er|ers|ing|s)?',
+                r'exploit(s|ed|ing)?',
+                r'\berror(s)?\b'
+            ]
+        },
+        "Balance": {
+            "SUCCESS": [
+                r'well balanced',
+                r'good balance',
+                r'balanced gameplay',
+                r'fair balance',
+                r'balanced (classes|weapons|heroes)'
+            ],
+            "FAILURE": [
+                r'bad balance',
+                r'unbalanced',
+                r'imbalanced',
+                r'broken (class|weapon|build|character)',
+                r'overpowered',
+                r'\bOP\b',
+                r'underpowered',
+                r'needs nerf',
+                r'needs buff',
+                r'pay to win',
+                r'\bp2w\b'
+            ]
+        },
+        "Blame": {
+            "SUCCESS": [
+
+                r'devs listened',
+                r'devs care',
+                r'developers fixed it',
+                r'great support from devs'
+            ],
+            "FAILURE": [
+
+                r'lazy devs?',
+                r'greedy devs?',
+                r'devs? don\'t care',
+                r'developers? don\'t care',
+                r'terrible devs?',
+                r'devs? ignored',
+                r'devs? abandoned',
+                r'cash grab',
+                r'money grab',
+                r'shameless cash grab',
+                r'scam',
+
+                r'predatory monetization',
+                r'predatory microtransactions',
+                r'paywall',
+
+                r'toxic community',
+                r'toxic players',
+                r'worst community',
+                r'shameful community'
+            ]
         }
+    
     },
 
     # 3. Shooter (FPS/TPS)
@@ -2009,7 +2259,90 @@ NEW_GENRE_FACTORS = {
                 r"broken (weapons?|guns?)", r"op weapons?", r"imbalan(ce|ced)", r"bullet spong(e|es)", r"bad hit reg",
                 r"weak sounds?", r"peashooter", r"clunky aiming", r"bad recoil", r"meta slave", r"nerf(ed)?"
             ]
+        },
+                "TechIssues": {
+            "SUCCESS": [
+                r'no bugs',
+                r'no lag',
+                r'stable performance',
+                r'well optimized',
+                r'no crashes'
+            ],
+            "FAILURE": [
+                r'\bbug(s)?\b',
+                r'\bglitch(es)?\b',
+                r'\bcrash(ed|es|ing)?\b',
+                r'\blag(gy)?\b',
+                r'\b(stutter|stuttering)\b',
+                r'\bfps drop(s)?\b',
+                r'\bframe drop(s)?\b',
+                r'performance issue(s)?',
+                r'poor(ly)? optimized',
+                r'\boptimization\b',
+                r'server issue(s)?',
+                r'\bdisconnect(ed|s|ing)?\b',
+                r'\bdesync\b',
+                r'cheat(s|er|ers|ing)?',
+                r'hack(er|ers|ing|s)?',
+                r'exploit(s|ed|ing)?',
+                r'\berror(s)?\b'
+            ]
+        },
+        "Balance": {
+            "SUCCESS": [
+                r'well balanced',
+                r'good balance',
+                r'balanced gameplay',
+                r'fair balance',
+                r'balanced (classes|weapons|heroes)'
+            ],
+            "FAILURE": [
+                r'bad balance',
+                r'unbalanced',
+                r'imbalanced',
+                r'broken (class|weapon|build|character)',
+                r'overpowered',
+                r'\bOP\b',
+                r'underpowered',
+                r'needs nerf',
+                r'needs buff',
+                r'pay to win',
+                r'\bp2w\b'
+            ]
+        },
+        "Blame": {
+            "SUCCESS": [
+
+                r'devs listened',
+                r'devs care',
+                r'developers fixed it',
+                r'great support from devs'
+            ],
+            "FAILURE": [
+
+                r'lazy devs?',
+                r'greedy devs?',
+                r'devs? don\'t care',
+                r'developers? don\'t care',
+                r'terrible devs?',
+                r'devs? ignored',
+                r'devs? abandoned',
+                r'cash grab',
+                r'money grab',
+                r'shameless cash grab',
+                r'scam',
+
+                r'predatory monetization',
+                r'predatory microtransactions',
+                r'paywall',
+
+                r'toxic community',
+                r'toxic players',
+                r'worst community',
+                r'shameful community'
+            ]
         }
+    
     },
 
     # 4. Survival (생존)
@@ -2043,7 +2376,90 @@ NEW_GENRE_FACTORS = {
                 r"slow progression", r"confusing", r"lack of (content|progression)", r"pointless", r"waste of time",
                 r"hit a wall", r"endgame", r"early access", r"no content"
             ]
+        },
+                "TechIssues": {
+            "SUCCESS": [
+                r'no bugs',
+                r'no lag',
+                r'stable performance',
+                r'well optimized',
+                r'no crashes'
+            ],
+            "FAILURE": [
+                r'\bbug(s)?\b',
+                r'\bglitch(es)?\b',
+                r'\bcrash(ed|es|ing)?\b',
+                r'\blag(gy)?\b',
+                r'\b(stutter|stuttering)\b',
+                r'\bfps drop(s)?\b',
+                r'\bframe drop(s)?\b',
+                r'performance issue(s)?',
+                r'poor(ly)? optimized',
+                r'\boptimization\b',
+                r'server issue(s)?',
+                r'\bdisconnect(ed|s|ing)?\b',
+                r'\bdesync\b',
+                r'cheat(s|er|ers|ing)?',
+                r'hack(er|ers|ing|s)?',
+                r'exploit(s|ed|ing)?',
+                r'\berror(s)?\b'
+            ]
+        },
+        "Balance": {
+            "SUCCESS": [
+                r'well balanced',
+                r'good balance',
+                r'balanced gameplay',
+                r'fair balance',
+                r'balanced (classes|weapons|heroes)'
+            ],
+            "FAILURE": [
+                r'bad balance',
+                r'unbalanced',
+                r'imbalanced',
+                r'broken (class|weapon|build|character)',
+                r'overpowered',
+                r'\bOP\b',
+                r'underpowered',
+                r'needs nerf',
+                r'needs buff',
+                r'pay to win',
+                r'\bp2w\b'
+            ]
+        },
+        "Blame": {
+            "SUCCESS": [
+
+                r'devs listened',
+                r'devs care',
+                r'developers fixed it',
+                r'great support from devs'
+            ],
+            "FAILURE": [
+
+                r'lazy devs?',
+                r'greedy devs?',
+                r'devs? don\'t care',
+                r'developers? don\'t care',
+                r'terrible devs?',
+                r'devs? ignored',
+                r'devs? abandoned',
+                r'cash grab',
+                r'money grab',
+                r'shameless cash grab',
+                r'scam',
+
+                r'predatory monetization',
+                r'predatory microtransactions',
+                r'paywall',
+
+                r'toxic community',
+                r'toxic players',
+                r'worst community',
+                r'shameful community'
+            ]
         }
+    
     },
 
     # 5. Visual Novel (비주얼 노벨)
@@ -2077,6 +2493,88 @@ NEW_GENRE_FACTORS = {
                 r"illusion of choice", r"linear story", r"kinetic novel", r"one ending", r"choices? (dont|don't) matter",
                 r"railroad(ed|ing)?", r"forced"
             ]
+        },
+                "TechIssues": {
+            "SUCCESS": [
+                r'no bugs',
+                r'no lag',
+                r'stable performance',
+                r'well optimized',
+                r'no crashes'
+            ],
+            "FAILURE": [
+                r'\bbug(s)?\b',
+                r'\bglitch(es)?\b',
+                r'\bcrash(ed|es|ing)?\b',
+                r'\blag(gy)?\b',
+                r'\b(stutter|stuttering)\b',
+                r'\bfps drop(s)?\b',
+                r'\bframe drop(s)?\b',
+                r'performance issue(s)?',
+                r'poor(ly)? optimized',
+                r'\boptimization\b',
+                r'server issue(s)?',
+                r'\bdisconnect(ed|s|ing)?\b',
+                r'\bdesync\b',
+                r'cheat(s|er|ers|ing)?',
+                r'hack(er|ers|ing|s)?',
+                r'exploit(s|ed|ing)?',
+                r'\berror(s)?\b'
+            ]
+        },
+        "Balance": {
+            "SUCCESS": [
+                r'well balanced',
+                r'good balance',
+                r'balanced gameplay',
+                r'fair balance',
+                r'balanced (classes|weapons|heroes)'
+            ],
+            "FAILURE": [
+                r'bad balance',
+                r'unbalanced',
+                r'imbalanced',
+                r'broken (class|weapon|build|character)',
+                r'overpowered',
+                r'\bOP\b',
+                r'underpowered',
+                r'needs nerf',
+                r'needs buff',
+                r'pay to win',
+                r'\bp2w\b'
+            ]
+        },
+        "Blame": {
+            "SUCCESS": [
+
+                r'devs listened',
+                r'devs care',
+                r'developers fixed it',
+                r'great support from devs'
+            ],
+            "FAILURE": [
+
+                r'lazy devs?',
+                r'greedy devs?',
+                r'devs? don\'t care',
+                r'developers? don\'t care',
+                r'terrible devs?',
+                r'devs? ignored',
+                r'devs? abandoned',
+                r'cash grab',
+                r'money grab',
+                r'shameless cash grab',
+                r'scam',
+
+                r'predatory monetization',
+                r'predatory microtransactions',
+                r'paywall',
+
+                r'toxic community',
+                r'toxic players',
+                r'worst community',
+                r'shameful community'
+            ]
         }
     },
 
@@ -2109,7 +2607,90 @@ NEW_GENRE_FACTORS = {
                 r"momentum", r"handicap", r"pay to win", r"p2w", r"casino", r"loot box(es)?", r"microtransactions?",
                 r"scripted", r"predatory", r"cash grab", r"yearly release"
             ]
+        },
+                "TechIssues": {
+            "SUCCESS": [
+                r'no bugs',
+                r'no lag',
+                r'stable performance',
+                r'well optimized',
+                r'no crashes'
+            ],
+            "FAILURE": [
+                r'\bbug(s)?\b',
+                r'\bglitch(es)?\b',
+                r'\bcrash(ed|es|ing)?\b',
+                r'\blag(gy)?\b',
+                r'\b(stutter|stuttering)\b',
+                r'\bfps drop(s)?\b',
+                r'\bframe drop(s)?\b',
+                r'performance issue(s)?',
+                r'poor(ly)? optimized',
+                r'\boptimization\b',
+                r'server issue(s)?',
+                r'\bdisconnect(ed|s|ing)?\b',
+                r'\bdesync\b',
+                r'cheat(s|er|ers|ing)?',
+                r'hack(er|ers|ing|s)?',
+                r'exploit(s|ed|ing)?',
+                r'\berror(s)?\b'
+            ]
+        },
+        "Balance": {
+            "SUCCESS": [
+                r'well balanced',
+                r'good balance',
+                r'balanced gameplay',
+                r'fair balance',
+                r'balanced (classes|weapons|heroes)'
+            ],
+            "FAILURE": [
+                r'bad balance',
+                r'unbalanced',
+                r'imbalanced',
+                r'broken (class|weapon|build|character)',
+                r'overpowered',
+                r'\bOP\b',
+                r'underpowered',
+                r'needs nerf',
+                r'needs buff',
+                r'pay to win',
+                r'\bp2w\b'
+            ]
+        },
+        "Blame": {
+            "SUCCESS": [
+
+                r'devs listened',
+                r'devs care',
+                r'developers fixed it',
+                r'great support from devs'
+            ],
+            "FAILURE": [
+
+                r'lazy devs?',
+                r'greedy devs?',
+                r'devs? don\'t care',
+                r'developers? don\'t care',
+                r'terrible devs?',
+                r'devs? ignored',
+                r'devs? abandoned',
+                r'cash grab',
+                r'money grab',
+                r'shameless cash grab',
+                r'scam',
+
+                r'predatory monetization',
+                r'predatory microtransactions',
+                r'paywall',
+
+                r'toxic community',
+                r'toxic players',
+                r'worst community',
+                r'shameful community'
+            ]
         }
+    
     },
 
     # 7. Roguelike (로그라이크)
@@ -2142,7 +2723,90 @@ NEW_GENRE_FACTORS = {
                 r"weak builds?", r"unbalan(ced|ce)", r"useless items?", r"lack of synergy", r"meta slave",
                 r"nerf(ed)?", r"broken items?"
             ]
+        },
+                "TechIssues": {
+            "SUCCESS": [
+                r'no bugs',
+                r'no lag',
+                r'stable performance',
+                r'well optimized',
+                r'no crashes'
+            ],
+            "FAILURE": [
+                r'\bbug(s)?\b',
+                r'\bglitch(es)?\b',
+                r'\bcrash(ed|es|ing)?\b',
+                r'\blag(gy)?\b',
+                r'\b(stutter|stuttering)\b',
+                r'\bfps drop(s)?\b',
+                r'\bframe drop(s)?\b',
+                r'performance issue(s)?',
+                r'poor(ly)? optimized',
+                r'\boptimization\b',
+                r'server issue(s)?',
+                r'\bdisconnect(ed|s|ing)?\b',
+                r'\bdesync\b',
+                r'cheat(s|er|ers|ing)?',
+                r'hack(er|ers|ing|s)?',
+                r'exploit(s|ed|ing)?',
+                r'\berror(s)?\b'
+            ]
+        },
+        "Balance": {
+            "SUCCESS": [
+                r'well balanced',
+                r'good balance',
+                r'balanced gameplay',
+                r'fair balance',
+                r'balanced (classes|weapons|heroes)'
+            ],
+            "FAILURE": [
+                r'bad balance',
+                r'unbalanced',
+                r'imbalanced',
+                r'broken (class|weapon|build|character)',
+                r'overpowered',
+                r'\bOP\b',
+                r'underpowered',
+                r'needs nerf',
+                r'needs buff',
+                r'pay to win',
+                r'\bp2w\b'
+            ]
+        },
+        "Blame": {
+            "SUCCESS": [
+
+                r'devs listened',
+                r'devs care',
+                r'developers fixed it',
+                r'great support from devs'
+            ],
+            "FAILURE": [
+
+                r'lazy devs?',
+                r'greedy devs?',
+                r'devs? don\'t care',
+                r'developers? don\'t care',
+                r'terrible devs?',
+                r'devs? ignored',
+                r'devs? abandoned',
+                r'cash grab',
+                r'money grab',
+                r'shameless cash grab',
+                r'scam',
+
+                r'predatory monetization',
+                r'predatory microtransactions',
+                r'paywall',
+
+                r'toxic community',
+                r'toxic players',
+                r'worst community',
+                r'shameful community'
+            ]
         }
+    
     },
 
     # 8. Card & Board (카드/보드)
@@ -2175,7 +2839,90 @@ NEW_GENRE_FACTORS = {
                 r"rng fest", r"pay to win", r"p2w", r"expensive", r"paywall", r"greedy devs?",
                 r"cash grab", r"money hungry", r"luck based", r"coin flip"
             ]
+        },
+                "TechIssues": {
+            "SUCCESS": [
+                r'no bugs',
+                r'no lag',
+                r'stable performance',
+                r'well optimized',
+                r'no crashes'
+            ],
+            "FAILURE": [
+                r'\bbug(s)?\b',
+                r'\bglitch(es)?\b',
+                r'\bcrash(ed|es|ing)?\b',
+                r'\blag(gy)?\b',
+                r'\b(stutter|stuttering)\b',
+                r'\bfps drop(s)?\b',
+                r'\bframe drop(s)?\b',
+                r'performance issue(s)?',
+                r'poor(ly)? optimized',
+                r'\boptimization\b',
+                r'server issue(s)?',
+                r'\bdisconnect(ed|s|ing)?\b',
+                r'\bdesync\b',
+                r'cheat(s|er|ers|ing)?',
+                r'hack(er|ers|ing|s)?',
+                r'exploit(s|ed|ing)?',
+                r'\berror(s)?\b'
+            ]
+        },
+        "Balance": {
+            "SUCCESS": [
+                r'well balanced',
+                r'good balance',
+                r'balanced gameplay',
+                r'fair balance',
+                r'balanced (classes|weapons|heroes)'
+            ],
+            "FAILURE": [
+                r'bad balance',
+                r'unbalanced',
+                r'imbalanced',
+                r'broken (class|weapon|build|character)',
+                r'overpowered',
+                r'\bOP\b',
+                r'underpowered',
+                r'needs nerf',
+                r'needs buff',
+                r'pay to win',
+                r'\bp2w\b'
+            ]
+        },
+        "Blame": {
+            "SUCCESS": [
+
+                r'devs listened',
+                r'devs care',
+                r'developers fixed it',
+                r'great support from devs'
+            ],
+            "FAILURE": [
+
+                r'lazy devs?',
+                r'greedy devs?',
+                r'devs? don\'t care',
+                r'developers? don\'t care',
+                r'terrible devs?',
+                r'devs? ignored',
+                r'devs? abandoned',
+                r'cash grab',
+                r'money grab',
+                r'shameless cash grab',
+                r'scam',
+
+                r'predatory monetization',
+                r'predatory microtransactions',
+                r'paywall',
+
+                r'toxic community',
+                r'toxic players',
+                r'worst community',
+                r'shameful community'
+            ]
         }
+    
     }
     
 }
