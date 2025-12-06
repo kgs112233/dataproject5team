@@ -4,7 +4,7 @@ import os
 import warnings
 
 warnings.filterwarnings('ignore')
-
+# 이미지 생성 테스트 및 결과 확인용 코드
 # 분석 대상 장르와 핵심 카테고리 정의
 # - 각 장르마다 원래 3개 핵심 카테고리 + 공통 3개(TechIssues, Balance, Blame)를 사용
 GENRE_FACTORS = {
@@ -143,3 +143,4 @@ if __name__ == '__main__':
         exit()
 
     plot_genre_ratios(df_genre_maximums)
+
