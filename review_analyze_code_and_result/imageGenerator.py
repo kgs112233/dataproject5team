@@ -5,9 +5,7 @@ import warnings
 
 warnings.filterwarnings('ignore')
 
-# =====================================================
-# ✅ 분석 대상 장르 & 카테고리 정의 (기존 + 신규 합본)
-# =====================================================
+
 GENRE_FACTORS = {
     "Action": ["Combat", "Controls", "Difficulty", "TechIssues", "Balance", "Blame"],
     "Strategy": ["StrategicVariety", "AIQuality", "InfoClarity", "TechIssues", "Balance", "Blame"],
@@ -35,14 +33,22 @@ GENRE_FACTORS = {
     "4X": ["AI Behavior", "Session Depth",
            "Accessibility & Depth", "TechIssues", "Balance", "Blame"],
 
-    "Platformer": ["Control", "Level Design", "Difficulty"],
-    "Horror": ["Atmosphere", "Jumpscare", "Presentation"],
-    "Shooter": ["Optimization", "Cheaters", "Gunplay"],
-    "Survival": ["Resource", "Exploration", "Progression"],
-    "Visual Novel": ["Character", "Story", "Choice"],
-    "Sports": ["Physics", "AI", "Game Flow"],
-    "Roguelike": ["RNG", "Replayability", "Synergy"],
-    "Card & Board": ["Strategy", "Accessibility", "Luck"]
+    "Platformer": ["Control", "Level Design", "Difficulty",
+               "TechIssues", "Balance", "Blame"],
+    "Horror": ["Atmosphere", "Jumpscare", "Presentation",
+               "TechIssues", "Balance", "Blame"],
+    "Shooter": ["Optimization", "Cheaters", "Gunplay",
+               "TechIssues", "Balance", "Blame"],
+    "Survival": ["Resource", "Exploration", "Progression",
+               "TechIssues", "Balance", "Blame"],
+    "Visual Novel": ["Character", "Story", "Choice",
+               "TechIssues", "Balance", "Blame"],
+    "Sports": ["Physics", "AI", "Game Flow",
+               "TechIssues", "Balance", "Blame"],
+    "Roguelike": ["RNG", "Replayability", "Synergy",
+               "TechIssues", "Balance", "Blame"],
+    "Card & Board": ["Strategy", "Accessibility", "Luck",
+               "TechIssues", "Balance", "Blame"]
 }
 
 
