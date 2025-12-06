@@ -57,14 +57,22 @@ NEW_GENRE_FACTORS = {
         "TechIssues", "Balance", "Blame"
     ],
 
-    "Platformer": ["Control", "Level Design", "Difficulty"],
-    "Horror": ["Atmosphere", "Jumpscare", "Presentation"],
-    "Shooter": ["Optimization", "Cheaters", "Gunplay"],
-    "Survival": ["Resource", "Exploration", "Progression"],
-    "Visual Novel": ["Character", "Story", "Choice"],
-    "Sports": ["Physics", "AI", "Game Flow"],
-    "Roguelike": ["RNG", "Replayability", "Synergy"],
-    "Card & Board": ["Strategy", "Accessibility", "Luck"]
+    "Platformer": ["Control", "Level Design", "Difficulty",
+               "TechIssues", "Balance", "Blame"],
+    "Horror": ["Atmosphere", "Jumpscare", "Presentation",
+               "TechIssues", "Balance", "Blame"],
+    "Shooter": ["Optimization", "Cheaters", "Gunplay",
+               "TechIssues", "Balance", "Blame"],
+    "Survival": ["Resource", "Exploration", "Progression",
+               "TechIssues", "Balance", "Blame"],
+    "Visual Novel": ["Character", "Story", "Choice",
+               "TechIssues", "Balance", "Blame"],
+    "Sports": ["Physics", "AI", "Game Flow",
+               "TechIssues", "Balance", "Blame"],
+    "Roguelike": ["RNG", "Replayability", "Synergy",
+               "TechIssues", "Balance", "Blame"],
+    "Card & Board": ["Strategy", "Accessibility", "Luck",
+               "TechIssues", "Balance", "Blame"]
 }
 
 
@@ -73,7 +81,6 @@ GENRE_FACTORS.update(BASE_GENRE_FACTORS)
 
 for genre, categories in NEW_GENRE_FACTORS.items():
     GENRE_FACTORS[genre] = categories 
-
 
 def calculate_genre_maximums():
     base_dir = (
@@ -120,7 +127,7 @@ def calculate_genre_maximums():
     )
 
     df_max.to_csv(GENRE_MAXIMUMS_PATH, index=False, encoding="utf-8-sig")
-    print(f"완료: {GENRE_MAXIMUMS_PATH}")
+    print(f"✅ 완료: {GENRE_MAXIMUMS_PATH}")
 
 
 if __name__ == "__main__":
