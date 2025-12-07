@@ -56,14 +56,14 @@ score_paid = ( # 유료 게임 공식: 수익(30) + 동접(30) + 다운(20) + �
     df['norm_rev'] * 0.30 + 
     df['norm_peak_players'] * 0.30 +
     df['norm_owners_midpoint'] * 0.20 +
-    df['adjusted_rating'] * 0.10 +
+    df['norm_adjusted_rating'] * 0.10 +
     df['norm_pub'] * 0.10
 )
 score_free = ( # 무료 게임 공식: 수익(0) + 동접(45) + 다운(35) + 평점(10) + 배급사(10)
     df['norm_rev'] * 0.00 +
     df['norm_peak_players'] * 0.45 +
     df['norm_owners_midpoint'] * 0.35 +
-    df['adjusted_rating'] * 0.10 +
+    df['norm_adjusted_rating'] * 0.10 +
     df['norm_pub'] * 0.10
 )
 
